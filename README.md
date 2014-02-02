@@ -8,7 +8,7 @@ Installation
 
 Simply run "python setup.py install".
 
-This module depends on websocket-client module available from: <http://github.com/liris/websocket-client>
+This module depends on websocket-client-py3 module available from: <http://github.com/liris/websocket-client/tree/py3>
 
 Example
 -------

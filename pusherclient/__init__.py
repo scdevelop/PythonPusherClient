@@ -1,7 +1,7 @@
-from channel import Channel
-from connection import Connection
+from pusherclient.channel import Channel
+from pusherclient.connection import Connection
 import hashlib
-import thread
+import _thread
 import hmac
 import logging
 
@@ -30,7 +30,7 @@ class Pusher(object):
 
     def connect(self):
         """Connect to Pusher"""
-        thread.start_new_thread(self.connection.run, ())
+        _thread.start_new_thread(self.connection.run, ())
 
     def disconnect(self):
         """Disconnect from Pusher"""
